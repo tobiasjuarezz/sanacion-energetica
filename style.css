@@ -1,16 +1,15 @@
-
 :root{
-  --ink-deep:   #0b1a16;
-  --ink-panel:  #122a24;
-  --ink-panel-2:#173a32;
-  --gold:       #b48b4a;
-  --gold-soft:  #d9b878;
-  --wine:       #5c2142;
-  --wine-soft:  #8a3a68;
-  --text-hi:    #eef6f1;
-  --text-mid:   #b4cdc2;
-  --text-low:   #74968a;
-  --line:       rgba(180,139,74,0.24);
+  --ink-deep:   #fdf1ee;
+  --ink-panel:  #ffffff;
+  --ink-panel-2:#fbe4de;
+  --gold:       #d98a76;
+  --gold-soft:  #e8ab9b;
+  --wine:       #f3c6c1;
+  --wine-soft:  #f6d6d1;
+  --text-hi:    #5a3a34;
+  --text-mid:   #8a6259;
+  --text-low:   #b28b81;
+  --line:       rgba(217,138,118,0.28);
   --radius:     2px;
 }
  
@@ -50,18 +49,18 @@ img{max-width:100%; display:block;}
 .stars{
   position:fixed; inset:0; z-index:0; pointer-events:none;
   background:
-    radial-gradient(1px 1px at 12% 22%, var(--gold-soft) 0%, transparent 60%),
-    radial-gradient(1px 1px at 78% 14%, var(--gold-soft) 0%, transparent 60%),
-    radial-gradient(1.5px 1.5px at 34% 68%, var(--text-hi) 0%, transparent 60%),
-    radial-gradient(1px 1px at 88% 78%, var(--gold-soft) 0%, transparent 60%),
-    radial-gradient(1px 1px at 55% 40%, var(--text-hi) 0%, transparent 60%),
-    radial-gradient(1.5px 1.5px at 20% 88%, var(--gold-soft) 0%, transparent 60%),
-    radial-gradient(1px 1px at 65% 90%, var(--text-hi) 0%, transparent 60%),
-    radial-gradient(1px 1px at 5% 55%, var(--gold-soft) 0%, transparent 60%),
-    radial-gradient(1px 1px at 95% 45%, var(--text-hi) 0%, transparent 60%);
+    radial-gradient(1.5px 1.5px at 12% 22%, var(--gold-soft) 0%, transparent 60%),
+    radial-gradient(1.5px 1.5px at 78% 14%, var(--gold-soft) 0%, transparent 60%),
+    radial-gradient(2px 2px at 34% 68%, var(--gold) 0%, transparent 60%),
+    radial-gradient(1.5px 1.5px at 88% 78%, var(--gold-soft) 0%, transparent 60%),
+    radial-gradient(1.5px 1.5px at 55% 40%, var(--gold) 0%, transparent 60%),
+    radial-gradient(2px 2px at 20% 88%, var(--gold-soft) 0%, transparent 60%),
+    radial-gradient(1.5px 1.5px at 65% 90%, var(--gold) 0%, transparent 60%),
+    radial-gradient(1.5px 1.5px at 5% 55%, var(--gold-soft) 0%, transparent 60%),
+    radial-gradient(1.5px 1.5px at 95% 45%, var(--gold) 0%, transparent 60%);
   background-size:100% 100%;
   animation:twinkle 6s ease-in-out infinite alternate;
-  opacity:0.55;
+  opacity:0.35;
 }
 @keyframes twinkle{ from{opacity:0.35;} to{opacity:0.75;} }
 @media (prefers-reduced-motion: reduce){ .stars{animation:none;} }
@@ -100,7 +99,7 @@ nav.wrap{
   font-size:0.78rem !important;
   letter-spacing:0.06em !important;
 }
-.nav-cta:hover{background:var(--gold); color:var(--ink-deep) !important;}
+.nav-cta:hover{background:var(--gold); color:#ffffff !important;}
  
 .burger{display:none; flex-direction:column; gap:5px; cursor:pointer; background:none; border:none; padding:8px; z-index:60;}
 .burger span{width:24px; height:1.5px; background:var(--gold-soft); display:block; transition:.25s;}
@@ -139,8 +138,8 @@ nav.wrap{
   border:1px solid transparent;
 }
 .btn-primary{
-  background:linear-gradient(135deg, var(--gold) 0%, #a9803a 100%);
-  color:var(--ink-deep);
+  background:linear-gradient(135deg, var(--gold) 0%, #c96f57 100%);
+  color:#ffffff;
   font-weight:600;
 }
 .btn-primary:hover{transform:translateY(-2px); box-shadow:0 10px 30px -10px rgba(201,162,77,0.5);}
@@ -205,12 +204,12 @@ section{position:relative; z-index:1; padding:5.5rem 0;}
 }
 .card-hint{font-size:0.72rem; color:var(--text-low); letter-spacing:0.05em;}
 .card-back{
-  background:linear-gradient(160deg, var(--wine) 0%, #4a1530 100%);
+  background:linear-gradient(160deg, var(--gold) 0%, #c96f57 100%);
   transform:rotateY(180deg);
   justify-content:space-between;
 }
-.card-back p{font-size:0.9rem; color:#f0dfe6; line-height:1.55;}
-.card-back .card-hint{color:#e3b9c8;}
+.card-back p{font-size:0.9rem; color:#fff6f3; line-height:1.55;}
+.card-back .card-hint{color:#fbdcd2;}
  
 /* ===== SOBRE MI ===== */
 .about{
